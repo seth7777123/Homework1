@@ -1,7 +1,7 @@
-package inventory2;
+package com.company;
 import java.util.Scanner;
 
-public class RunApp {
+public class Calculate {
     public static void main(String[] args) {
 
         Scanner input = new Scanner(System.in);

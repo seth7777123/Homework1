@@ -1,12 +1,10 @@
 package inventory2;
 import java.util.Scanner;
 
-public class RunApp
-{
-    public static void main(String[] args)
-    {
+public class RunApp {
+    public static void main(String[] args) {
 
-        Scanner input = new Scanner( System.in );
+        Scanner input = new Scanner(System.in);
 
         Items theItem = new Items();
 
@@ -17,12 +15,11 @@ public class RunApp
         number = input.nextInt();
         input.nextLine();
 
-        Items[]inv = new Items[number];
+        Items[] inv = new Items[number];
 
 
-        for(int count = 0; count < inv.length; ++count)
-        {
-            System.out.print("\nWhat is item " +(count +1) + "'s name?:  ");
+        for (int count = 0; count < inv.length; ++count) {
+            System.out.print("\nWhat is item " + (count + 1) + "'s name?:  ");
             Name = input.nextLine();
             theItem.setName(Name);
 
@@ -36,7 +33,7 @@ public class RunApp
 
             System.out.print(Name + "'s cost: ");
             double Price = input.nextDouble();
-            theItem.setPrice (Price);
+            theItem.setPrice(Price);
 
             inv[count] = new Items(Name, Price, Units, pNumber);
             input.nextLine();
